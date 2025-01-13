@@ -1,0 +1,9 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www.)?institutoprevidenciamunhoz.com.br$
+RewriteCond %{REQUEST_URI} !^/www/site/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ /www/site/$1
+RewriteCond %{HTTP_HOST} ^(www.)?institutoprevidenciamunhoz.com.br$
+RewriteRule ^(/)?$ www/site/index.html [L]

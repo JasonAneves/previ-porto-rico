@@ -1,0 +1,90 @@
+<div class="conteudo">
+    <form id="form-cadastro" action="" enctype="multipart/form-data" method="post">
+        <div class="card-form">
+            <div class="card-form-topico"><span><i class="fa fa-chevron-right" aria-hidden="true"></i> Informações Gerais</span></div>
+            <div class="card-form-body">
+                <div class="row" style="padding-bottom: 15px;">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <label for="categoria" class="control-label">Categoria N&iacute;vel 01</label>
+                            <div class="input-group">
+                                <span class="input-group-addon input">                               
+                                    <a  href="#" onclick="popup('<?= $publicoSistema ?>/popup/transparencia_categoria_1.php?tela=<?= $tela ?>&id_instituicao='+jQuery('#id_instituicao').val(), 'Categoria')">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </span> 
+                                <input 
+                                    type="hidden" 
+                                    name="id_nivel1"
+                                    id="id_nivel1"
+                                    value="<?= $object['id_nivel1'] ?>"  />
+                                <input 
+                                    type="text"  
+                                    name="categoria_1"
+                                    id="categoria_1"
+                                    value="<?= $object['categoria_1'] ?>"
+                                    class="form-control input required" 
+                                    placeholder="Selecione uma categoria nivel 01..." 
+                                    required  />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <label for="categoria" class="control-label">Categoria N&iacute;vel 02</label>
+                            <div class="input-group">
+                                <span class="input-group-addon input">                               
+                                    <a  href="#" onclick="popup('<?= $publicoSistema ?>/popup/transparencia_categoria_2.php?tela=<?= $tela ?>&id_nivel1='+jQuery('#id_nivel1').val(), 'Subcategoria')">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </span> 
+                                <input 
+                                    type="hidden" 
+                                    name="id_nivel2"
+                                    id="id_nivel2"
+                                    value="<?= $object['id_nivel2'] ?>"  />
+                                <input 
+                                    type="text" 
+                                    name="categoria_2"
+                                    id="categoria_2"
+                                    value="<?= $object['categoria_2'] ?>"
+                                    class="form-control input required" 
+                                    placeholder="Selecione uma categoria nivel 02..." 
+                                    required  />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 form-group" style="padding-top: 15px;">
+                        <label for="descricao" class="control-label">Descrição</label>
+                            <input 
+                                type="text" 
+                                name="descricao" 
+                                id="descricao" 
+                                value="<?= $object['descricao'] ?>" 
+                                class="form-control input required" 
+                                required 
+                                placeholder="Informe a descrição..." />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <label for="link_categoria" class="control-label">Link</label>
+                            <input 
+                                type="url" 
+                                name="link_categoria" 
+                                id="link_categoria" 
+                                value="<?= $object['link'] ?>" 
+                                class="form-control input required url" 
+                                placeholder="Informe uma URL válida..." />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php include "03-button.php"; ?>
+        <?php include "04-javaScript.php"; ?>
+    </form>
+</div>

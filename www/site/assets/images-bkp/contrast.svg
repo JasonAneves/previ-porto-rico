@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="contrast" transform="translate(-999 -18)">
+    <path id="Intersection_1" data-name="Intersection 1" d="M0,0A8,8,0,0,1,8,8a8,8,0,0,1-8,8Z" transform="translate(1007 18)" fill="#666"/>
+    <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(999 18)" fill="none" stroke="#666" stroke-width="1">
+      <circle cx="8" cy="8" r="8" stroke="none"/>
+      <circle cx="8" cy="8" r="7.5" fill="none"/>
+    </g>
+  </g>
+</svg>

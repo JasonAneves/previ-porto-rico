@@ -1,0 +1,257 @@
+.bg-rodape {
+  background-color: #374344;
+}
+
+.grid-container-rodape {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "rodape";
+}
+
+.rodape {
+  padding: 2% 0 2% 0;
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "area-brasao info";
+  grid-area: rodape;
+  margin: 25px 0;
+  color: white;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+.area-brasao {
+  display: grid;
+  grid-template-columns: 0.4fr 1.6fr;
+  grid-template-rows: 1fr;
+  gap: 0px 10px;
+  grid-template-areas: "brasao titulo-rodape";
+  grid-area: area-brasao;
+}
+
+.brasao {
+  grid-area: brasao;
+}
+
+.brasao img {
+  width: 85%;
+}
+
+.titulo-rodape {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "titulo-1"
+    "titulo-2";
+  grid-area: titulo-rodape;
+}
+
+.titulo-1 {
+  grid-area: titulo-1;
+  display: flex;
+  align-items: flex-end;
+  text-align: left;
+  font: normal normal 300 11px/13px Roboto;
+  letter-spacing: -0.1px;
+  color: #FFFFFF;
+}
+
+.titulo-2 {
+  grid-area: titulo-2;
+  text-align: left;
+  font: normal normal 900 39px/53px Segoe UI;
+  letter-spacing: -3.2px;
+  color: #FFFFFF;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 0.1fr 1.9fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 5px;
+  grid-template-areas:
+    "ico-local desc-local"
+    "ico-tel desc-tel"
+    "ico-email desc-email";
+  grid-area: info;
+  align-items: center;
+  font-size: 18px;
+}
+
+.ico-local {
+  grid-area: ico-local;
+}
+
+.desc-local {
+  grid-area: desc-local;
+}
+
+.ico-tel {
+  grid-area: ico-tel;
+}
+
+.desc-tel {
+  grid-area: desc-tel;
+}
+
+.ico-email {
+  grid-area: ico-email;
+}
+
+.desc-email {
+  grid-area: desc-email;
+}
+
+.rodape-inga {
+  display: grid;
+  grid-template-columns: 1fr 0.1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "ultima-atualizacao . logo-inga";
+  grid-area: rodape-inga;
+  padding: 15px;
+}
+
+.ultima-atualizacao {
+  grid-area: ultima-atualizacao;
+  color: #fff;
+  display: flex;
+  margin-top: 5px;
+}
+
+.logo-inga {
+  grid-area: logo-inga;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.borda-rodape-inga {
+  border-top: 1px solid #fff;
+}
+
+@media (max-width: 1024px) {
+  .info {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .rodape {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px 0px;
+    grid-template-areas:
+      "area-brasao"
+      "info";
+    grid-area: rodape;
+  }
+
+  .rodape-inga {
+    grid-template-columns: 1fr 0.1fr 0.1fr;
+  }
+
+  .grid-container-rodape {
+    display: flex;
+    justify-content: center;
+  }
+
+  .info {
+    display: grid;
+    grid-template-columns: 0.5fr 0.2fr 1.9fr 0.2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 5px;
+    grid-template-areas:
+      " . ico-local desc-local . "
+      " . ico-tel desc-tel . "
+      " . ico-email desc-email .";
+    grid-area: info;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .brasao img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brasao img {
+    width: 80px;
+  }
+
+  .titulo-1 {
+    font-size: 19px;
+    display: block;
+  }
+
+  .titulo-2 {
+    font-size: 33px;
+  }
+
+  .titulo-rodape {
+    justify-items: center;
+  }
+
+  .area-brasao {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "brasao"
+      "titulo-rodape";
+    grid-area: area-brasao;
+    text-align: center;
+  }
+
+  .borda-rodape-inga {
+    margin-bottom: 82px;
+  }
+}
+
+@media (max-width: 600px) {
+  .rodape-inga {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "ultima-atualizacao"
+      "logo-inga";
+    padding-top: 15px;
+  }
+
+  .logo-inga {
+    justify-content: center;
+  }
+
+  .ultima-atualizacao {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    line-height: 1px;
+    text-align: center;
+  }
+
+  .ultima-atualizacao p {
+    margin-bottom: 20px;
+  }
+
+  .logo-rp img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 540px) {
+  .info {
+    font-size: 13px;
+  }
+}

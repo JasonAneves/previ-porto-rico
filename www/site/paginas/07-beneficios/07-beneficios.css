@@ -1,0 +1,78 @@
+.fundo_beneficios {
+  background: #00B2E8;
+  height: auto;
+  padding: 3rem;
+}
+
+.container_beneficios {
+  padding: 0;
+}
+
+.div_titulo_beneficios {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 3rem;
+}
+
+.titulo-beneficios {
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+  font-style: italic;
+  font-size: 46px;
+  color: #ffff;
+}
+
+.barra_beneficios {
+  width: 75px;
+  height: 10px;
+  background: #ffffff9c;
+}
+
+.btn_beneficio p {
+  text-align: center;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 31px;
+  letter-spacing: 0px;
+  color: #0F427D;
+  padding: 0 50px;
+}
+
+.btn_beneficio {
+  background: #fff;
+  width: 235px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.firstWord1 {
+  font-weight: bold;
+}
+
+.wordthin1 {
+  font-weight: 300;
+}
+
+.img_seta_esquerda {
+  position: relative;
+  top: 80px;
+  right: 100%;
+}
+
+.img_seta_direita {
+  position: relative;
+  top: 80px;
+  left: 100%;
+}
+
+
+@media(max-width:991px) {
+  .owl-bene {
+    padding-bottom: 5rem;
+  }
+}

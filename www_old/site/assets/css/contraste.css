@@ -1,0 +1,74 @@
+body,
+div,
+.navbar-nav > li > .dropdown-menu,
+.dropdown-menu > li > a:hover,
+.btn,
+.btn-default,
+.form,
+.form-control,
+.fa,
+.fa-home,
+.panel,
+.conselho-projeto,
+.legislacao-busca,
+.gastos-rio-bom,
+.list-group-item,
+.btn-ver-todas a,
+.bg-light,
+.dropdown-item,
+.panel-default > .panel-heading,
+.ul-submenu-responsivo,
+.div-noticias .div-button a {
+  background-color: #000 !important;
+  color: white !important;
+}
+
+section p,
+span,
+figcaption,
+ul > li > a,
+ul > li > a > ul > li > a,
+.acessibilidade,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+.text-info,
+p,
+label,
+strong,
+.panel-default > .panel-heading {
+  color: #fff !important;
+}
+
+.menu-topo {
+  border: 1px solid white;
+  border-left: none;
+  border-right: none;
+}
+
+.titulo-noticias span,
+.titulo-beneficios span {
+  -webkit-text-stroke-width: 0;
+  -webkit-text-stroke-color: white;
+}
+
+footer {
+  border-top: 1px solid white;
+}
+@media (max-width: 991px) {
+  .btn {
+    padding: 0.45rem 1.2rem;
+    background: #f8f9fa !important;
+  }
+
+  .bloco-btns-responsivo {
+    box-shadow: 0px -1px 6px 0px #ce9600 !important;
+  }
+  .overlay {
+    background-color: rgb(133 133 133 / 17%) !important;
+  }
+}

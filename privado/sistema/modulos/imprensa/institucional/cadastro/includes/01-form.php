@@ -1,0 +1,54 @@
+<div class="conteudo">
+    <form id="form-cadastro" action="" enctype="multipart/form-data" method="post">
+        <div class="card-form">
+            <div class="card-form-topico"><span> Informações Gerais</span></div>
+            <div class="card-form-body">
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <label for="titulo" class="control-label">Título</label>
+                        <input
+                            type="text"
+                            name="titulo"
+                            id="titulo"
+                            value="<?= $object['titulo'] ?>"
+                            class="form-control input required"
+                            required
+                            placeholder="Informe a descrição..." />
+                    </div>
+                    <div class="col-sm-12 form-group">
+                        <label for="artigo" class="control-label">Artigo</label>
+                        <textarea
+                            name="artigo"
+                            id="artigo"
+                            class="form-control editor"
+                            required><?= $object['artigo'] ?>
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-form">
+            <div class="card-form-topico"><span> Anexos Relacionados</span></div>
+            <div class="card-form-body">
+                <?php include $classes."/galerias/anexo.php"; ?>
+            </div>
+        </div>
+
+        <div class="card-form">
+            <div class="card-form-topico"><span> Galeria de Fotos</span></div>
+            <div class="card-form-body">
+                <?php require $classes."/galerias/foto.php"; ?>
+            </div>
+        </div>
+
+        <div class="card-form">
+            <div class="card-form-topico"><span> Galeria de Vídeos</span></div>
+            <div class="card-form-body">
+                <?php include $classes."/galerias/video.php"; ?>
+            </div>
+        </div>
+        <?php include "03-button.php"; ?>
+        <?php include "04-javaScript.php"; ?>
+    </form>
+</div>

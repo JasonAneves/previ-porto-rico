@@ -1,0 +1,141 @@
+.toast {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+  max-width: 300px;
+  min-width: 250px;
+  height: 82px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  border: 1px solid #ddd;
+}
+
+.modal-backdrop {
+  position: unset !important;
+}
+
+.modal.fade {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.popup-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  cursor: pointer;
+}
+
+.popup-count {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 0, 0);
+  color: #fff;
+  position: absolute;
+  right: 0px;
+  top: -7px;
+}
+
+.popup-box {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 8;
+}
+
+.msgs-popup {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+}
+
+@media (max-width: 991px) {
+  .popup-box {
+    bottom: 90px;
+  }
+  .msgs-popup {
+    bottom: 90px;
+  }
+}
+
+/* slider */
+
+#slides {
+  display: none;
+}
+
+/* Center the slideshow */
+.container {
+  margin: 0 auto;
+}
+
+/* Show active item in the pagination */
+.slidesjs-pagination .active {
+  color: red;
+}
+
+.carouselPopup .carousel-item img {
+  height: 450px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.popup .modal-footer {
+  justify-content: space-between !important;
+}
+
+.imgs-popup {
+  width: 100%;
+  margin: 0px auto;
+}
+
+/* Media quires for a responsive layout */
+
+/* For tablets & smart phones */
+@media (max-width: 767px) {
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .container {
+    width: auto;
+  }
+}
+
+/* For smartphones */
+@media (max-width: 480px) {
+  .container {
+    width: auto;
+  }
+}
+
+/* For smaller displays like laptops */
+@media (min-width: 768px) and (max-width: 979px) {
+  .container {
+    width: 724px;
+  }
+}
+
+/* For larger displays */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

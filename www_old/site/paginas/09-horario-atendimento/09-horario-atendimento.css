@@ -1,0 +1,17 @@
+.titulo-hora h2 {
+    text-align: center;
+    font: normal normal bold 13px/24px Montserrat;
+    letter-spacing: 0.31px;
+    color: #374344;
+}
+
+.cor-do-container {
+    background: #F2F2F2 0% 0% no-repeat padding-box;
+    padding: 1% 0% 1% 0%;
+}
+
+@media (max-width: 912px) {
+    .titulo-hora h2{
+        font-size: 10px;
+    }
+}

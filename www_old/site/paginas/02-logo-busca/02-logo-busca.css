@@ -1,0 +1,193 @@
+.grid-container-topo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "area-logo-topo area-logo-topo busca";
+}
+
+.area-logo-topo {
+  display: grid;
+  grid-template-columns: 0.1fr 0.9fr;
+  grid-template-rows: 1fr;
+  gap: 0px 20px;
+  grid-template-areas: "logo-topo desc-topo";
+  grid-area: area-logo-topo;
+}
+
+.logo-topo {
+  grid-area: logo-topo;
+}
+
+.logo-topo img {
+  width: 108px;
+  height: 113px;
+}
+
+.desc-topo {
+  grid-area: desc-topo;
+  color: #fff;
+  line-height: 1.1;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.desc-topo p {
+  font-size: 12px;
+  font-weight: 300;
+}
+.desc-topo p:last-child {
+  font-size: 39px;
+  font-weight: 800;
+}
+
+.busca {
+  grid-area: busca;
+  display: grid;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo-busca {
+  background: #2884A8;
+  padding: 10px 0;
+}
+
+.busca-topo input {
+  width: 100% !important;
+}
+
+#custom-search-input {
+  margin: 0;
+  margin-top: 35px;
+  padding: 0;
+}
+
+#custom-search-input .search-query {
+  padding-right: 3px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 15px;
+  box-shadow: 0px 3px 6px #00000029;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+::-webkit-input-placeholder {
+  color: #000 !important;
+}
+
+:-moz-placeholder {
+  color: #000 !important;
+}
+
+::-moz-placeholder {
+  color: #000 !important;
+}
+
+:-ms-input-placeholder {
+  color: #000 !important;
+}
+
+#custom-search-input button {
+  border: 0;
+  background: none;
+  padding: 2px 5px;
+  margin-top: 0px;
+  position: relative;
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #000;
+}
+
+.search-query:focus + button {
+  z-index: 3;
+}
+
+.busca-topo-form input {
+  width: 334px;
+}
+
+.busca-topo-form button {
+  left: 280px;
+  bottom: 43px;
+}
+
+.glyphicon {
+  font-size: 18px;
+  top: 11px;
+  right: 10px;
+}
+
+.input-group > .custom-file:focus,
+.input-group > .custom-select:focus,
+.input-group > .form-control:focus {
+  z-index: 2;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #c7c7c7;
+}
+
+.obras-unidas {
+  color: #fff;
+  font-size: 62px;
+  font-style: italic;
+  font-weight: 300;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+.obras-unidas span {
+  font-weight: 600 !important;
+  padding-left: 10px;
+}
+
+@media (max-width: 991px) {
+  .grid-container-topo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    margin: 0;
+  }
+  .area-logo-topo {
+    grid-area: 1 / 1 / 2 / 2;
+    grid-template-columns: 1fr;
+    gap: 20px 0px;
+  }
+  .busca {
+    display: none;
+  }
+  .logo-topo {
+    display: flex;
+    justify-content: center;
+  }
+  .desc-topo {
+    grid-area: 2 / 1 / 3 / 2;
+    text-align: center;
+  }
+  .input-group {
+    margin-left: 13px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 376px) {
+  .logo-topo img {
+    width: 99px;
+    height: 97px;
+  }
+}
+
+@media (max-width: 320px) {
+  .desc-topo p:last-child {
+    font-size: 33px;
+  }
+}

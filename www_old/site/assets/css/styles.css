@@ -1,0 +1,50 @@
+@import "../../paginas/01-topo/01-topo.css";
+@import "../../paginas/02-logo-busca/02-logo-busca.css";
+@import "../../paginas/03-menu-topo/03-menu-topo.css";
+@import "../../paginas/04-banner/04-banner.css";
+@import "../../paginas/05-btn-centro/05-btn-centro.css";
+@import "../../paginas/06-noticias-acesso/06-noticias-acesso.css";
+@import "../../paginas/07-beneficios/07-beneficios.css";
+@import "../../paginas/08-btn-rodape/08-btn-rodape.css";
+@import "../../paginas/09-horario-atendimento/09-horario-atendimento.css";
+@import "../../paginas/10-dados-rodape/10-dados-rodape.css";
+@import "../../paginas/botoes-rodape-responsivo/botoes.css";
+@import "../../paginas/toast-popup/toast-popup.css";
+@import "../../paginas/enquete/enquete.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@900&family=Roboto+Condensed:wght@700&family=Roboto:wght@100;300&display=swap");
+
+body {
+  overflow-x: hidden;
+  padding-right: 0 !important;
+}
+.no-padding {
+  padding: 0 !important;
+}
+
+.img-ajuste {
+  width: 850px;
+  height: 800px;
+  object-fit: contain;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .img-ajuste {
+    width: 650px;
+    height: 600px;
+    object-fit: contain;
+  }
+}
+
+.ekko-lightbox-nav-overlay a {
+  color: #141414 !important;
+  opacity: 0.4 !important;
+}
+
+.ekko-lightbox-nav-overlay a:hover {
+  opacity: 1 !important;
+}

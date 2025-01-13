@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.back_topo {
+  background: #037834;
+  height: auto;
+  padding: 0.9rem;
+  border-bottom: solid 1px #ffffff;
+}
+
+.container_topo {
+  padding: 0;
+  margin: 0;
+}
+
+.controle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.acessi {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.acesso {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.acesso a {
+  text-decoration: none;
+}
+
+.traso {
+  height: 6px;
+  display: flex;
+  background: #fff;
+  width: 1px;
+}
+
+.link_acess {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.t_acessi {
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Roboto';
+}
+
+.btn_acess,
+.img_contraste,
+.link_acess {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+
+.btn_acess:hover,
+.img_contraste:hover,
+.link_acess:hover {
+  filter: drop-shadow(0px 1px 7px #000);
+  transform: scale(1.1);
+}
+
+
+@media(max-width: 767px) {
+  .container_topo {
+    padding: 0;
+    margin: 0 !important;
+    display: contents;
+  }
+}
+
+@media(max-width:640px) {
+  .back_topo {
+    padding: 0.5rem;
+  }
+}
+
+@media(max-width:614px) {
+  .controle {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media(max-width:300px) {
+
+  .acessi,
+  .acesso {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

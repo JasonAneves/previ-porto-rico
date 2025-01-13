@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34.239" height="34" viewBox="0 0 34.239 34">
+  <g id="calendarioDeReunioes" transform="translate(-2570.521 -1111)">
+    <g id="Group_486" data-name="Group 486" transform="translate(2571.395 1111.265)">
+      <rect id="Rectangle_58" data-name="Rectangle 58" width="33" height="34" transform="translate(-0.395 -0.265)" fill="none"/>
+      <g id="Group_437" data-name="Group 437" transform="translate(0.127 0.785)">
+        <path id="Path_451" data-name="Path 451" d="M2038.6,1279.211v5.283h5.283" transform="translate(-2023.804 -1264.608)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line id="Line_136" data-name="Line 136" x2="32.163" transform="translate(0 9.064)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="6.989" cy="6.989" rx="6.989" ry="6.989" transform="translate(8.903 11.551)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path_452" data-name="Path 452" d="M2034.953,1280.922v-20.7a1.415,1.415,0,0,0-1.444-1.384h-2.6v2.241a1.106,1.106,0,0,1-1.128,1.081h-.054a1.106,1.106,0,0,1-1.129-1.081v-2.241h-4.766v2.241a1.106,1.106,0,0,1-1.129,1.081h-.054a1.105,1.105,0,0,1-1.128-1.081v-2.241h-4.766v2.241a1.106,1.106,0,0,1-1.129,1.081h-.053a1.106,1.106,0,0,1-1.129-1.081v-2.241h-4.767v2.241a1.106,1.106,0,0,1-1.128,1.081h-.054a1.106,1.106,0,0,1-1.129-1.081v-2.241h-3.033a1.415,1.415,0,0,0-1.444,1.384v24.024a1.415,1.415,0,0,0,1.444,1.384h30.621" transform="translate(-2002.714 -1255.332)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <rect id="Rectangle_54" data-name="Rectangle 54" width="2.44" height="7.167" transform="translate(4.901)" stroke-width="2" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <rect id="Rectangle_55" data-name="Rectangle 55" width="2.44" height="7.167" transform="translate(11.673)" stroke-width="2" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <rect id="Rectangle_56" data-name="Rectangle 56" width="2.44" height="7.167" transform="translate(18.722)" stroke-width="2" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <rect id="Rectangle_57" data-name="Rectangle 57" width="2.44" height="7.167" transform="translate(25.529)" stroke-width="2" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

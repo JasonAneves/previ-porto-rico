@@ -1,0 +1,56 @@
+.fundo_icones_centro {
+  height: auto;
+  padding: 2rem 1rem;
+}
+
+.container_icones {
+  padding: 0;
+}
+
+.control_icones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.control_icones a {
+  text-decoration: none;
+}
+
+.link_bt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  box-shadow: 0px 3px 15px #C9C9C98A;
+  width: 175px;
+  height: 140px;
+  border-radius: 7px;
+  transition: all 0.5s;
+}
+
+.tiutlo_btn {
+  text-align: center;
+  font: normal normal bold 14px/24px Qanelas;
+  letter-spacing: 0.45px;
+  color: #000000;
+  opacity: 1;
+  transition: all 0.5s;
+}
+.control_icones:hover > :not(:hover){
+  opacity: 0.2;
+  transition: opacity 0.5s
+}
+.link_bt:hover{
+  border: solid 1px #037834;
+}
+
+
+@media(max-width: 1199px) {
+  .control_icones {
+    justify-content: center;
+    gap: 0.8rem;
+  }
+}

@@ -1,0 +1,21 @@
+.img_banner {
+  width: 100% !important;
+  height: 455px;
+  object-fit: cover;
+}
+
+@media(max-width:768px) {
+  .img_banner {
+    width: 100% !important;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next,
+  .carousel-indicators {
+    display: none !important;
+  }
+
+
+}

@@ -1,0 +1,83 @@
+.btns-rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.btn-rodape p {
+  text-align: left;
+  font: normal normal bold 15px/11px Fira Sans;
+  letter-spacing: 0.38px;
+  color: #000000;
+  border: 10px solid transparent;
+}
+
+.btn-rodape a {
+  font-weight: normal;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  flex-direction: initial;
+  height: inherit;
+}
+
+.btn-rodape p:hover {
+  color: #2884A8;
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 991px) {
+  .btn-rodape p {
+    font-size: 13px;
+  }
+
+  .btn-rodape img {
+    width: 35px;
+  }
+}
+
+@media (max-width: 586px) {
+  .btns-rodape {
+    justify-content: space-between;
+  }
+
+  .btn-rodape p {
+    width: 100px;
+    line-height: 1;
+  }
+
+  .btn-rodape img {
+    height: 40px;
+  }
+  .btns-rodape {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 417px) {
+  .btns-rodape {
+    flex-wrap: wrap;
+  }
+
+  .btn-rodape {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .btn-rodape p {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 318px) {
+  .btn-rodape {
+    width: 110px;
+  }
+}

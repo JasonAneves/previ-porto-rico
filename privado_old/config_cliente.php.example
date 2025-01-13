@@ -1,0 +1,43 @@
+// Produção
+<?php
+  $dominioAbsoluto = "novatebasprgov";
+  $dominioPublico = "novatebas.pr.gov.br";
+  $idCliente = 51;
+  $iii = 3;
+  $ii = 2;
+  $i = 1;
+  $url = $_SERVER['REQUEST_URI'];
+  $url = explode("/", $url);
+  $CAMINHO = "http://coronavirus.".$dominioPublico."/";
+  $URL_ARQUIVO_PRODUCAO = "http://coronavirus.".$dominioPublico."/sistema/";
+  $cliente = $idCliente;
+  $CAMINHOSIS = $CAMINHO."sistema/";
+  $CAMINHOIMG = $URL_ARQUIVO_PRODUCAO . "imagens";
+  $CAMINHOANEXO = $URL_ARQUIVO_PRODUCAO . "arquivos";
+  $caminhoUploadArquivo = "/home/".$dominioAbsoluto."/public_html/coronavirus/PortalCOVID-19/www/site/sistema/arquivos/";
+  $publicoSistema = $CAMINHOSIS;
+  $caminhoSite = $CAMINHO;
+  $root = '/home/'.$dominioAbsoluto.'/public_html/coronavirus/PortalCOVID-19';
+?>
+
+
+//localhost
+<?php
+  $dominioAbsoluto = "prevmunhoz";
+  $dominioPublico = "http://localhost/FundoPrevidencia/";
+  $idCliente = 12244;
+  $iii = 6;
+  $ii = 5;
+  $i = 4;
+  $url = $_SERVER['REQUEST_URI'];
+  $url = explode("/", $url);
+  $CAMINHO = "http://localhost/FundoPrevidencia/www/site/";
+  $URL_ARQUIVO_PRODUCAO = $CAMINHO."sistema/";
+  $CAMINHOSIS = $CAMINHO."sistema/";
+  $CAMINHOIMG = $URL_ARQUIVO_PRODUCAO . "imagens/" . $idCliente;
+  $CAMINHOANEXO = $URL_ARQUIVO_PRODUCAO . "arquivos/" . $idCliente;
+  $caminhoUploadArquivo = "/home/".$dominioAbsoluto."/public_html/www/site/sistema/arquivos/";
+  $publicoSistema = $CAMINHOSIS;
+  $caminhoSite = $CAMINHO;
+  $root = '/home/'.$dominioAbsoluto.'/public_html/';
+?>

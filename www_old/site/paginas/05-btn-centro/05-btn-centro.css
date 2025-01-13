@@ -1,0 +1,128 @@
+a {
+  text-decoration: none !important;
+}
+
+.btns-centro {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: background-position 0.2s ease-out;
+  -webkit-transition: background-position 0.2s ease-out;
+}
+
+.btns-centro:hover {
+  background-position: 45%;
+  transition: background-position 0.2s ease-out;
+  -webkit-transition: background-position 0.2s ease-out;
+}
+
+.btns-centro:hover .btn-centro {
+  color: #00649e;
+  transition: color 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+}
+
+.btn-centro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease-out;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 7px;
+  width: 190px;
+  height: 146px;
+  transition: all 0.2s ease;
+  background: #ffffff;
+}
+.btn-centro p{
+  text-align: center;
+  font: normal normal 500 14px/21px Oswald;
+  letter-spacing: 0.7px;
+  color: #374344;
+  opacity: 1;
+}
+
+.btns-centro a:hover .btn-centro {
+  background: #f2f2f2;
+  transition: all 0.2s ease;
+}
+
+.btn-centro p {
+  margin-top: 20px;
+}
+
+.btns-centro-area {
+  margin-top: 20px;
+  height: 200px;
+}
+
+@media (max-width: 1199px) {
+  .btns-centro {
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+  .btns-centro a {
+    margin-top: 20px;
+  }
+  .btns-centro-area {
+    height: 340px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .btns-centro {
+    height: 130px;
+  }
+}
+
+@media (max-width: 767px) {
+  .btn-centro {
+    width: 160px;
+    height: 119px;
+  }
+  .btn-centro img {
+    width: 40px;
+  }
+  .btns-centro-area {
+    height: 280px;
+  }
+}
+
+@media (max-width: 526px) {
+  .btns-centro-area {
+    height: 400px;
+  }
+}
+
+@media (max-width: 414px) {
+  .btn-centro div:nth-child(3),
+  .traco {
+    display: none;
+  }
+  .btn-centro img {
+    width: 30px;
+  }
+}
+
+@media (max-width: 366px) {
+  .btns-centro {
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  .btn-centro {
+    width: 210px;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 10px;
+  }
+  .btns-centro-area {
+    height: 290px;
+  }
+  .btns-centro a {
+    margin-top: 10px;
+  }
+}

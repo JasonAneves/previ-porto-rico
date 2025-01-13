@@ -1,0 +1,93 @@
+.carousel-indicators .active {
+  background-color: transparent;
+  margin-top: -5px !important;
+}
+
+.carousel-indicators .active {
+  width: 20px;
+  height: 20px;
+  margin: 0px 20px;
+  background-color: #FFF;
+}
+
+.carousel-indicators li {
+  width: 13px;
+  height: 13px;
+  margin: 0px 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.carousel-control-next-icon {
+    margin-right: 70%;
+}
+
+.carousel-control-prev-icon {
+    margin-right: -70%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 20%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("../../assets/images/prev1.svg");
+    width: 45px;
+    height: 45px;
+}
+
+.carousel-control-next-icon {
+    background-image: url("../../assets/images/next1.svg");
+    width: 45px;
+    height: 45px;
+}
+
+.carousel-item img {
+  height: 450px;
+  width: 100%;
+  object-fit: fill !important;
+}
+
+.carousel-indicators {
+  z-index: 8;
+}
+
+@media (max-width: 1280px) {
+    .carousel-control-next-icon {
+        margin-right: 0%;
+    }
+
+    .carousel-control-prev-icon {
+        margin-right: 0%;
+    }    
+}
+
+@media (max-width: 1080px) {
+  .carousel-indicators li {
+    margin: 0px 10px;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 11%;
+  }
+
+  .carousel-item img {
+    height: 310px;
+  }
+}
+
+@media (max-width: 991px) {
+  #carouselExampleIndicators {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+    #banner{
+        display: none;
+    }
+    
+}

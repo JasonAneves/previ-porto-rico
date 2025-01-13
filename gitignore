@@ -1,0 +1,7 @@
+.idea/
+privado/config_cliente.php
+www/site/assets/images/favicon.png
+www/site/sistema/arquivos/*
+www/site/sistema/imagens/*
+www/site/php.ini
+www/site/.user.ini

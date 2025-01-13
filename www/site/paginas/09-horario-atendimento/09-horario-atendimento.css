@@ -1,0 +1,22 @@
+.fundo_horario {
+    background: #F2F2F2;
+    height: auto;
+    padding: 1.125rem;
+}
+
+.container_horarioRodape {
+    padding: 0;
+}
+
+.controle_horario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_horario {
+    text-align: center;
+    font: normal normal bold 13px/24px Montserrat;
+    letter-spacing: 0.31px;
+    color: #000000;
+}

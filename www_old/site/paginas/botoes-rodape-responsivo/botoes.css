@@ -1,0 +1,97 @@
+.bloco-btns-responsivo {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .bloco-btns-responsivo {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -1px 6px 0px #00000054;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: white;
+  }
+  .nav-item {
+    margin: 5px 0;
+    padding: 15px 0;
+    background-color: #2884A8;
+  }
+  .nav-item:hover {
+    background-color: #374344;
+  }
+
+  .dropdown-menu {
+    background-color: #f8f9fa;
+  }
+  .navbar-brand {
+    display: none;
+  }
+  .navbar-light .navbar-toggler {
+    background: #f8f9fa;
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+  .bg-light {
+    background-color: white !important;
+  }
+  .modal-header .close {
+    padding: 1rem;
+    margin: 0;
+    position: absolute;
+    right: -7px;
+    top: -16px;
+  }
+  .input-group {
+    margin-left: 0;
+  }
+  .modal-header {
+    padding: 0;
+    z-index: 2;
+  }
+  .busca-topo-form input {
+    width: 52vw;
+  }
+  .busca-topo-form button {
+    left: -10px;
+    bottom: 39px;
+    float: right;
+  }
+  .btn-responsivo .btn {
+    padding: 0.45rem 1.2rem;
+    background: #f8f9fa;
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+  .dropdown-menu {
+    border: none;
+    padding: 0;
+  }
+  .dropdown-item {
+    padding: 1rem 1.5rem;
+    border: 1px solid #f2f2f2;
+  }
+  .navbar-nav > li > .dropdown-menu {
+    margin-bottom: 18px;
+  }
+
+  .busca-responsivo img:first-child {
+    height: 17px;
+  }
+}
+
+@media (max-width: 500px) {
+  .sideMenu {
+    max-width: 80%;
+  }
+
+  .dropdown-menu {
+    top: -11px !important;
+    min-width: auto !important;
+  }
+
+  .dropdown-item {
+    padding: 0.5rem 1rem !important;
+  }
+}
